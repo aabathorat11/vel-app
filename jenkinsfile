@@ -1,0 +1,52 @@
+pipeline {
+
+             agent {
+
+                   
+                                label {
+                                         label "built-in"
+                                         customWorkspace "/mnt/pipe"    
+                                     }
+  
+ 
+                 }
+
+   
+              stages   {
+
+
+                              stage ("one")  {
+
+
+                                          steps  {
+                                                                 sh "rm -rf * "
+                                                                 sh "mkdir velocity"
+                                                                echo "hello-world" 
+
+
+
+}
+}
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
